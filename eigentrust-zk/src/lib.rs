@@ -254,14 +254,14 @@ pub const FIXED: usize = 10;
 #[derive(Clone, Debug)]
 pub struct CommonConfig {
 	/// Advice columns
-	advice: [Column<Advice>; ADVICE],
+	pub advice: [Column<Advice>; ADVICE],
 	/// Fixed columns
 	fixed: [Column<Fixed>; FIXED],
 	/// Table column
 	#[allow(dead_code)]
 	table: TableColumn,
 	/// Instance column
-	instance: Column<Instance>,
+	pub instance: Column<Instance>,
 }
 
 impl CommonConfig {

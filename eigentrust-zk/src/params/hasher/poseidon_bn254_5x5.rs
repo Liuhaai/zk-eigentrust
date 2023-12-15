@@ -26,7 +26,7 @@ impl Sbox for Params {
 	}
 }
 
-impl RoundParams<Fr, 5> for Params {
+impl<F: FieldExt> RoundParams<F, 5> for Params {
 	fn partial_rounds() -> usize {
 		60
 	}
